@@ -1,0 +1,28 @@
+{
+  "name": "copy",
+  "version": "1.0.0",
+  "description": "> [dev project] charlie",
+  "homepage": "https://github.com/stephenruelas155-coder/copy#readme",
+  "bugs": {
+    "url": "https://github.com/stephenruelas155-coder/copy/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephenruelas155-coder/copy.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {},
+  "keywords": []
+}
