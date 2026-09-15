@@ -23,7 +23,7 @@
 
 - **As a** developer
 - **I want** a CI/CD infrastructure
-- **so that** change my code on multiple websites without
+- **so that** change my code on multiple websites without does this work now
 
 ### narrative
 
