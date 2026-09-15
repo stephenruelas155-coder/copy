@@ -9,15 +9,15 @@
 
   resource                     link
   ---------------------------- ----------------------
-  PROD codebase                [`main`](URL)
+  PROD codebase                [[`main`](URL)](https://github.com/stephenruelas155-coder/copy/tree/main)
   PROD server                  [GCP](URL)
-  DEV codebase                 [`dev`](URL)
-  DEV server                   [Render](URL)
-  docs                         [`docs/`](URL)
-  published docs               [GitHub Pages](URL)
-  CI/CD workflow               [`deploy.yml`](URL)
-  successful PROD deployment   [GitHub Action](URL)
-  resolved GOLF issue          [issue \#](URL)
+  DEV codebase                 [[`dev`](URL)](https://github.com/stephenruelas155-coder/copy/tree/dev)
+  DEV server                   [[Render](URL)](https://copy21whtkldfdlk.onrender.com)
+  docs                         [[`docs/`](URL)](https://github.com/stephenruelas155-coder/copy/tree/main/docs)
+  published docs               [[GitHub Pages](URL)](https://github.com/stephenruelas155-coder/copy/tree/main/public/pages)
+  CI/CD workflow               [[`deploy.yml`](URL)](https://github.com/stephenruelas155-coder/copy/blob/main/.github/workflows/deploy-main-to-gcp.yml)
+  successful PROD deployment   [[GitHub Action](URL)](https://github.com/stephenruelas155-coder/copy/actions)
+  resolved GOLF issue          [[issue \#](URL)](https://github.com/stephenruelas155-coder/copy/issues)
 
 ### user story
 
