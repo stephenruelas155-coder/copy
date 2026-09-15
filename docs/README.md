@@ -23,7 +23,8 @@
 
 - **As a** developer
 - **I want** a CI/CD infrastructure
-- **so that** change my code on multiple websites without does this work now fdsa
+- **so that** I can host my program on multiple servers and a change made in github
+will change all other program on different websties
 
 ### narrative
 
