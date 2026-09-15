@@ -23,7 +23,7 @@
 
 - **As a** developer
 - **I want** a CI/CD infrastructure
-- **so that** 
+- **so that** change my code on multiple websites without
 
 ### narrative
 
