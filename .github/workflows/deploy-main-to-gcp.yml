@@ -27,7 +27,63 @@ jobs:
       # REGION: PREPARE SSH
       # prepare the GitHub runner to securely connect to GCP
       # ======================================================
+name: deploy-main-to-gcp.yml
 
+# ============================================================
+# REGION: TRIGGER
+# when should this workflow run?
+# ============================================================
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+
+jobs:
+  deploy:
+
+    # ========================================================
+    # REGION: RUNNER
+    # GitHub gives us a temporary Ubuntu machine
+    # ========================================================
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # ======================================================
+      # REGION: PREPARE SSH
+      # prepare the GitHub runner to securely connect to GCP
+      # ======================================================
+
+      - name: Prepare SSH
+        shell: bash
+        run: |
+
+          # create the runner's SSH directory
+          mkdir -p ~/.ssh
+
+          # owner = rwx | group = none | others = none
+          chmod 700 ~/.ssh
+
+          # write our PRIVATE deployment key from GitHub Secrets
+          # use a generic name because the key may be ED25519, RSA, etc.
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+
+          # private key should only be readable/writable by its owner
+          chmod 600 ~/.ssh/deploy_key
+
+          # record the VM's SSH host key
+          # safer than disabling host-key checking
+          #
+          # later:
+          # ssh-keyscan -H "${{ vars.SSH_HOST }}" >> ~/.ssh/known_hosts
+
+          ssh-keyscan -H 34.58.92.186 >> ~/.ssh/known_hosts
+
+          # known_hosts is not secret; it only needs to be readable
+          chmod 644 ~/.ssh/known_hosts
       - name: Prepare SSH
         shell: bash
         run: |
