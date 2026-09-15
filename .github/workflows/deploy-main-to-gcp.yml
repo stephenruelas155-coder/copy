@@ -15,10 +15,8 @@ jobs:
         run: |
           mkdir -p ~/.ssh
           chmod 700 ~/.ssh
-
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-
           ssh-keyscan -H 34.58.92.186 >> ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
 
@@ -33,16 +31,10 @@ jobs:
         run: |
           ssh -i ~/.ssh/deploy_key -T "$SSH_USER@$SSH_HOST" <<EOF
             set -e
-
             cd "$APP_DIR"
-
             git pull
-
             cd "$SERVER_DIR"
-
             npm ci
-
             pm2 restart "$PM2_NAME" || pm2 start app.js --name "$PM2_NAME"
-
             pm2 save
           EOF
