@@ -51,18 +51,21 @@ GitHub
 
 ### project structure
 
-Use `tree` to show your actual project structure.
 
 ``` text
 repo/
 ├── .github/
 │   └── workflows/
+|        └──deploy-main-to-gcp.yml
 ├── docs/
 │   └── README.md
 ├── public/
+|    └──index.html
 ├── server/
+|    └──app.js
+|    └──package-lock.json
+|    └──package.json
 ├── .gitignore
-└── ...
 ```
 
 ### GCP
@@ -71,4 +74,3 @@ external IP: `34.58.92.186`\
 Linux user: `stephenruelas155`\
 instructor SSH public key installed: `yes`
 public key
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFv4vTqiFztPcFIrc2DFDQJnHv7Q8zIY1S04hAvyUEXZ sruelas@CSM245-LAB31
