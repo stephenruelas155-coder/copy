@@ -10,7 +10,7 @@
   resource                     link
   ---------------------------- ----------------------
   PROD codebase                [[`main`](URL)](https://github.com/stephenruelas155-coder/copy/tree/main)
-  PROD server                  [GCP](URL)
+  PROD server                  [GCP](URL)(http://34.58.92.186)
   DEV codebase                 [[`dev`](URL)](https://github.com/stephenruelas155-coder/copy/tree/dev)
   DEV server                   [[Render](URL)](https://copy21whtkldfdlk.onrender.com)
   docs                         [[`docs/`](URL)](https://github.com/stephenruelas155-coder/copy/tree/main/docs)
@@ -21,14 +21,15 @@
 
 ### user story
 
-- **As a** burgeoning full-stack developer,
+- **As a** developer
 - **I want** a CI/CD infrastructure
 - **so that** I can develop locally, manage my code in GitHub, and
     automatically deploy changes to DEV and PROD environments.
 
 ### narrative
 
-In 2--4 sentences, briefly describe your GOLF infrastructure and whatyou built/deployed.
+I have built an infrastructure that shows my program on multiple websites. I can make changes 
+locally and those changes will be made to everywhere my program is hosted. 
 
 ### architecture
 
@@ -66,6 +67,8 @@ repo/
 
 ### GCP
 
-external IP: `00.00.00.00`\
-Linux user: `username`\
+external IP: `34.58.92.186`\
+Linux user: `stephenruelas155`\
 instructor SSH public key installed: `yes`
+public key
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFv4vTqiFztPcFIrc2DFDQJnHv7Q8zIY1S04hAvyUEXZ sruelas@CSM245-LAB31
