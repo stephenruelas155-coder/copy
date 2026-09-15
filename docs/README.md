@@ -23,8 +23,7 @@
 
 - **As a** developer
 - **I want** a CI/CD infrastructure
-- **so that** I can develop locally, manage my code in GitHub, and
-    automatically deploy changes to DEV and PROD environments.
+- **so that** 
 
 ### narrative
 
