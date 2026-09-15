@@ -56,6 +56,64 @@ jobs:
       # REGION: PREPARE SSH
       # prepare the GitHub runner to securely connect to GCP
       # ======================================================
+name: deploy-main-to-gcp.yml
+
+# ============================================================
+# REGION: TRIGGER
+# when should this workflow run?
+# ============================================================
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+
+jobs:
+  deploy:
+
+    # ========================================================
+    # REGION: RUNNER
+    # GitHub gives us a temporary Ubuntu machine
+    # ========================================================
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # ======================================================
+      # REGION: PREPARE SSH
+      # prepare the GitHub runner to securely connect to GCP
+      # ======================================================
+name: deploy-main-to-gcp.yml
+
+# ============================================================
+# REGION: TRIGGER
+# when should this workflow run?
+# ============================================================
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+
+jobs:
+  deploy:
+
+    # ========================================================
+    # REGION: RUNNER
+    # GitHub gives us a temporary Ubuntu machine
+    # ========================================================
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # ======================================================
+      # REGION: PREPARE SSH
+      # prepare the GitHub runner to securely connect to GCP
+      # ======================================================
 
       - name: Prepare SSH
         shell: bash
